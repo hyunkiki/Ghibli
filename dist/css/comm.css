@@ -1,5 +1,38 @@
-body {
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap";
+/*-------------@media (max-width: 1920px)------------- */
+/*-------------/@media (max-width: 1920px)------------- */
+/*-------------@media (max-width: 400px)------------- */
+/*-------------/@media (max-width: 400px)------------- */
+:root {
+  font-family: "Lato", sans-serif;
+  --colordarka: hsl(0, 0%, 6.472%);
+  --colordarkb: hsl(0, 0%, 3.236%);
+  --colorwhitea: hsl(0, 0%, 93.528%);
+  --colorwhiteb: hsl(0, 0%, 90.292%);
+  --fontd: 375.89px;
+  --fonth1: 250.59px;
+  --fonth2: 167.06px;
+  --fonth3: 111.38px;
+  --fonth4: 74.25px;
+  --fonth5: 49.5px;
+  --fontparagraph: 33px;
+  --fontsubtitle: 22px;
+  --goldenratio1: 1920px;
+  --goldenratio2: 1186.65px;
+  --goldenratio3: 733.41px;
+  --goldenratio4: 453.28px;
+  --goldenratio5: 280.15px;
+  --goldenratio6: 173.15px;
+  --goldenratio7: 107.01px;
+  --goldenratio8: 66.14px;
+  --goldenratio9: 40.88px;
+  --goldenratio10: 25.27px;
+}
+
+* {
   margin: 0;
+  padding: 0;
+  color: var(--ColorDarkA);
 }
 
 .inner {
@@ -9,7 +42,21 @@ body {
   max-width: 1280px;
 }
 
-#onepage_wrap #header {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ColorWhiteA);
+  opacity: 0;
+}
+
+.landingPage {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+.landingPage #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,49 +66,149 @@ body {
   top: 0;
   width: 92%;
 }
-#onepage_wrap #header #navbar-nav {
+.landingPage #header #navbar-nav {
   margin: 0;
   display: flex;
   width: 30%;
   justify-content: space-between;
 }
-#onepage_wrap #header #navbar-nav li {
+.landingPage #header #navbar-nav li {
   list-style-type: none;
 }
-#onepage_wrap #header #navbar-nav a {
+.landingPage #header #navbar-nav a {
   text-decoration: none;
   font-size: 24px;
   font-family: "Pretendard Variable";
-  color: #000;
+  color: #fff;
 }
-#onepage_wrap #header #navbar-nav a:hover {
+.landingPage #header #navbar-nav a:hover {
   color: blue;
 }
-#onepage_wrap .home {
+.landingPage .home {
   background: rgb(16, 154, 234);
   width: 100%;
   height: 100vh;
 }
-#onepage_wrap .home .home_box {
+.landingPage .home .home_box {
   display: flex;
   align-items: flex-end;
 }
-#onepage_wrap .home .home_box .thumb_img {
-  width: 50%;
+.landingPage .home .home_box .thumb_img {
+  width: 60%;
   padding-top: 100px;
 }
-#onepage_wrap .home .home_box .thumb_img img {
+.landingPage .home .home_box .thumb_img img {
   width: 100%;
 }
-#onepage_wrap .home .home_box .ghibil_tit {
-  color: #fff;
-  font-size: 85px;
-  font-weight: bold;
-  margin: 0;
-  border-bottom: 1px solid #fff;
+.landingPage .home .home_box .letter_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#onepage_wrap .home .home_box .ghibil_tit2 {
+.landingPage .home .home_box .letterwrapper1 {
+  display: flex;
+  border-bottom: 1px solid;
   color: #fff;
-  font-size: 85px;
+  font-size: 40px;
+}
+.landingPage .home .home_box .letterwrapper1 .letter {
   margin: 0;
+}
+.landingPage .home .home_box .letterwrapper2 {
+  display: flex;
+  color: #fff;
+  font-size: 30px;
+}
+.landingPage .home .home_box .letterwrapper2 .letter {
+  margin: 0;
+}
+.landingPage section {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: right;
+  right: 50%;
+  cursor: default;
+}
+.landingPage section h1 {
+  font-size: var(--FontH3);
+  font-weight: 700;
+  color: var(--ColorDarkA);
+  transition: transform 0.31s ease;
+  transform-origin: right bottom;
+}
+.landingPage section h1:hover {
+  transform: scale(1.13);
+}
+.landingPage section h1 span {
+  display: block;
+}
+.landingPage section p {
+  font-size: var(--FontParagraph);
+  font-weight: 400;
+  color: var(--ColorDarkA);
+  transition: transform 0.31s ease;
+  transform-origin: right center;
+}
+.landingPage section p:hover {
+  transform: scale(1.13);
+}
+.landingPage section p span {
+  display: block;
+}
+.landingPage section p:nth-child(3) {
+  transform-origin: right top;
+}
+.landingPage #ScrollDown {
+  position: absolute;
+  bottom: var(--GoldenRatio7);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+.landingPage #ScrollDown p {
+  font-size: var(--FontSubtitle);
+  font-weight: 400;
+  color: var(--ColorDarkA);
+}
+.landingPage #ImageContainer {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  left: 50%;
+}
+.landingPage #ImageContainer img {
+  width: var(--GoldenRatio4);
+  margin-left: var(--GoldenRatio7);
+}
+.landingPage #slide {
+  position: absolute;
+  right: 50%;
+  height: 100vh;
+  margin-right: var(--GoldenRatio9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: column;
+  cursor: default;
+}
+.landingPage #slide h1 {
+  font-size: var(--FontH5);
+  font-weight: 700;
+  color: var(--ColorDarkA);
+}
+.landingPage #slide p {
+  margin-top: var(--GoldenRatio9);
+  width: var(--GoldenRatio3);
+  font-weight: 400;
+  font-size: var(--FontSubtitle);
+  color: var(--ColorDarkA);
+  text-align: right;
 }/*# sourceMappingURL=comm.css.map */
