@@ -3,6 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta
+      name="description"
+      content="Dora (GSAP ScrollTrigger) (Golden Ratio Grid) (Architecture Website Concept) Created By iCodeAyush."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
     <title>GHIBIL</title>
     <link
       rel="stylesheet"
@@ -16,40 +39,28 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./dist/css/comm.css" />
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <!-- 아래는 선택사항입니다. css3:false 옵션을 쓰시면서 "linear", "swing" 또는 "easeInOutCubic" 대신 다른 전환(easing) 효과를 원하시는 경우에만 필요합니다.
+    <script src="vendors/easings.min.js"></script>  -->
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
-    <!----------------------------------------------------LandingPage--------------------------------------------------->
-    <div id="wrapper" class="landingPage">
-      <header id="header">
-        <a class="header_logo" href="#">
-          <img src="./img/ghibil_header_logo.png" alt="ghibil_header_logo" />
-        </a>
-        <ul id="navbar-nav">
-          <li data-menuanchor="HOME">
-            <a href="#HOME">HOME</a>
-          </li>
-          <li data-menuanchor="ABOUT">
-            <a href="#ABOUT">ABOUT</a>
-          </li>
-          <li data-menuanchor="WORK">
-            <a href="#WORK">WORK</a>
-          </li>
-          <li data-menuanchor="EVENT">
-            <a href="#EVENT">EVENT</a>
-          </li>
-        </ul>
-      </header>
-
-      <!------------Intro------------>
+    <div id="onepage_wrap">
       <div class="home">
         <div class="inner">
           <div class="home_box">
             <div class="thumb_img">
-              <img src="./img/ghibil_logo.png" alt="GHIBIL_logo" />
+              <img
+                src="./img/ghibil_logo.png"
+                alt="GHIBIL_logo"
+                data-aos="fade-down"
+                data-aos-delay="300"
+                data-aos-duration="800"
+              />
             </div>
             <div class="letter_wrap">
               <div class="letterwrapper1">
@@ -74,83 +85,12 @@
           </div>
         </div>
       </div>
-      <!------------/Intro------------>
-
-      <!------------D------------>
-
-      <!------------/D------------>
-
-      <!------------ScrollDown------------>
-      <!-- <div id="ScrollDown">
-        <p>ScrollDown</p>
-      </div> -->
-      <!------------/ScrollDown------------>
-    </div>
-    <!----------------------------------------------------/LandingPage--------------------------------------------------->
-
-    <!----------------------------------------------------Slide1--------------------------------------------------->
-    <div id="wrapper" class="slide1">
-      <div id="ImageContainer">
-        <img
-          src="https://icodeayush.github.io/Dora/img/ModernLiving.jpg"
-          alt="ModernLiving"
-        />
-      </div>
-      <div id="slide">
-        <h1>Modern Living</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-          enim in, perspiciatis sunt expedita consectetur! Repellat delectus
-          fugit, laboriosam qui deleniti iure.
-        </p>
+      <div class="about">
+        <h2 class="intro_tit">GHIBIL ABOUT</h2>
       </div>
     </div>
-    <!----------------------------------------------------/Slide1--------------------------------------------------->
-
-    <!----------------------------------------------------Slide2--------------------------------------------------->
-    <div id="wrapper" class="slide2">
-      <div id="ImageContainer">
-        <img
-          src="https://icodeayush.github.io/Dora/img/CoffeeTable.jpg"
-          alt="CoffeeTable"
-        />
-      </div>
-      <div id="slide">
-        <h1>Coffee Table</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-          perspiciatis veritatis reprehenderit, officiis incidunt itaque facilis
-          placeat sint dignissimos accusantium tenetur repellendus.
-        </p>
-      </div>
-    </div>
-    <!----------------------------------------------------/Slide2--------------------------------------------------->
-
-    <!----------------------------------------------------Slide3--------------------------------------------------->
-    <div id="wrapper" class="slide3">
-      <div id="ImageContainer">
-        <img
-          src="https://icodeayush.github.io/Dora/img/BedroomInterior.jpg"
-          alt="BedroomInterior"
-        />
-      </div>
-      <div id="slide">
-        <h1>Bedroom Interior</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          deleniti quo odit dolorum laudantium aut magnam impedit. Placeat magni
-          at culpa ex.
-        </p>
-      </div>
-    </div>
-    <!----------------------------------------------------/Slide3--------------------------------------------------->
-
-    <!----------------------------------------------------CodeBy--------------------------------------------------->
-    <!-- <div id="codeby">
-      <a target="_blank" href="https://icodeayush.github.io/"
-        >Code By <span>iCodeAyush</span></a
-      >
-    </div> -->
-    <!----------------------------------------------------/CodeBy--------------------------------------------------->
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
