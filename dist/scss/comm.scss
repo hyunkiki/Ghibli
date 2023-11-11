@@ -1,3 +1,6 @@
+$color_1: #000;
+$font-family_1: "Lato";
+
 body {
   margin: 0;
 }
@@ -74,6 +77,117 @@ body {
       font-size: 50px;
       text-align: center;
       color: #000;
+    }
+    /* parallax__cont */
+    #parallax__title {
+      position: fixed;
+      left: 20px;
+      top: 20px;
+      z-index: 1000;
+      h1 {
+        font-size: 30px;
+        border-bottom: 1px dashed #fff;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        font-weight: 400;
+        display: inline-block;
+      }
+      p {
+        font-size: 16px;
+      }
+      ul {
+        margin-top: 10px;
+      }
+      li {
+        display: inline;
+        a {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 1px dashed #fff;
+          display: inline-block;
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+        }
+      }
+      li.active {
+        a {
+          background: #fff;
+          color: $color_1;
+        }
+      }
+    }
+    #parallax__cont {
+      max-width: 1600px;
+      width: 98%;
+      margin: 0 auto;
+    }
+    .parallax__item {
+      width: 1000px;
+      max-width: 70vw;
+      margin: 30vw auto;
+      text-align: left;
+      margin-right: 0;
+      position: relative;
+      padding-top: 15vw;
+      &:nth-child(even) {
+        margin-left: 0;
+        text-align: right;
+        .parallax__item__num {
+          left: auto;
+          right: -5vw;
+        }
+        .parallax__item__desc {
+          margin-left: auto;
+          margin-right: -4vw;
+        }
+      }
+    }
+    .parallax__item__num {
+      font-size: 35vw;
+      position: absolute;
+      left: -5vw;
+      top: -13vw;
+      opacity: 0.07;
+      font-family: $font-family_1;
+      font-weight: 100;
+    }
+    .parallax__item__title {
+      padding-bottom: 5px;
+      font-weight: 400;
+    }
+    .thumb_img {
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: #000;
+      position: relative;
+      overflow: hidden;
+    }
+    img {
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      filter: saturate(0%);
+      transition: all 1s;
+      &:hover {
+        filter: saturate(100%);
+        transform: scale(1.025);
+      }
+    }
+    .parallax__item__desc {
+      font-size: 4vw;
+      line-height: 1.4;
+      margin-top: -5vw;
+      margin-left: -4vw;
+      z-index: 100;
+      position: relative;
+      word-break: keep-all;
     }
   }
 }

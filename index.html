@@ -39,12 +39,9 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./dist/css/comm.css" />
-    <!-- 아래는 선택사항입니다. css3:false 옵션을 쓰시면서 "linear", "swing" 또는 "easeInOutCubic" 대신 다른 전환(easing) 효과를 원하시는 경우에만 필요합니다.
-    <script src="vendors/easings.min.js"></script>  -->
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
@@ -86,7 +83,56 @@
         </div>
       </div>
       <div class="about">
-        <h2 class="intro_tit">GHIBIL ABOUT</h2>
+        <div class="inner">
+          <h2 class="intro_tit">GHIBIL ABOUT</h2>
+          <section id="section1" class="parallax__item">
+            <span class="parallax__item__num">01</span>
+            <h2 class="parallax__item__title">section1</h2>
+            <div class="thumb_img">
+              <img src="./img/hayao.jpg" alt="hayao" />
+            </div>
+            <p class="parallax__item__desc reveal">
+              높은 목표를 세우고, 스스로 채찍질 한다.
+            </p>
+          </section>
+          <!-- //section1 -->
+
+          <section id="section2" class="parallax__item">
+            <span class="parallax__item__num">02</span>
+            <h2 class="parallax__item__title">section2</h2>
+            <div class="thumb_img reveal_LTR">
+              <img src="./img/hayao.jpg" alt="hayao" />
+            </div>
+            <p class="parallax__item__desc reveal">
+              높은 목표를 세우고, 스스로 채찍질 한다.
+            </p>
+          </section>
+          <!-- //section2 -->
+
+          <section id="section3" class="parallax__item">
+            <span class="parallax__item__num">03</span>
+            <h2 class="parallax__item__title">section3</h2>
+            <div class="thumb_img reveal_BTT">
+              <img src="./img/hayao.jpg" alt="hayao" />
+            </div>
+            <p class="parallax__item__desc reveal">
+              높은 목표를 세우고, 스스로 채찍질 한다.
+            </p>
+          </section>
+          <!-- //section3 -->
+
+          <section id="section4" class="parallax__item">
+            <span class="parallax__item__num">04</span>
+            <h2 class="parallax__item__title">section4</h2>
+            <div class="thumb_img reveal_TTB">
+              <img src="./img/hayao.jpg" alt="hayao" />
+            </div>
+            <p class="parallax__item__desc reveal">
+              높은 목표를 세우고, 스스로 채찍질 한다.
+            </p>
+          </section>
+          <!-- //section4 -->
+        </div>
       </div>
     </div>
   </body>
