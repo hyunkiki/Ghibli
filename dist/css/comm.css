@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -159,18 +160,75 @@ body {
   background-size: cover;
 }
 #onepage_wrap .about #section1 .parallax__item__img {
-  background-image: url(../../img/hayao&toshio&Isao.jpg);
+  background-image: url(../../img/Ghibli_illust.jpg);
 }
 #onepage_wrap .about #section2 .parallax__item__img {
-  background-image: url(../../img/company.jpg);
+  background-image: url(../../img/hayao&toshio&Isao.jpg);
 }
 #onepage_wrap .about #section3 .parallax__item__img {
-  background-image: url(assets/img/images03@2.jpg);
+  background-image: url(../../img/company.jpg);
 }
 #onepage_wrap .about #section4 .parallax__item__img {
-  background-image: url(assets/img/images04@2.jpg);
+  background-image: url(../../img/HisaSaijō.jpg);
 }
 #onepage_wrap .about .parallax__item__desc {
-  font-size: 30px;
+  font-size: 25px;
   font-family: "pretendard";
+}
+#onepage_wrap .text_slide {
+  position: relative;
+  padding: 10vw 0;
+  overflow: hidden;
+  height: 50vh;
+}
+#onepage_wrap .image-container {
+  position: relative;
+  z-index: 2;
+  width: 42vw;
+  height: 58vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#onepage_wrap .image-container__inner {
+  width: 100%;
+  height: 100%;
+}
+#onepage_wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.2);
+}
+#onepage_wrap .text-container {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transform: translateY(-50%);
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+#onepage_wrap .text-container__front {
+  z-index: 3;
+}
+#onepage_wrap .text-container__front .parallax-text {
+  color: transparent;
+  -webkit-text-stroke: 0.2vw #f7f7f7;
+}
+#onepage_wrap .parallax-text {
+  position: relative;
+  font-family: "Lato";
+  font-size: 12vw;
+  line-height: 10vw;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #000;
+  margin: 0;
+}
+#onepage_wrap .parallax-text:last-child {
+  align-self: flex-end;
 }/*# sourceMappingURL=comm.css.map */
