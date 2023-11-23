@@ -74,7 +74,7 @@ textContainers.forEach((element, index) => {
       start: start + "px bottom",
       end: "bottom top",
     },
-    x: "-54vw",
+    x: "-70vw",
     transformOrigin: "left center",
     ease: "none",
   });
@@ -85,7 +85,7 @@ textContainers.forEach((element, index) => {
       start: start + "px bottom",
       end: "bottom top",
     },
-    x: "32vw",
+    x: "30vw",
     transformOrigin: "left center",
     ease: "none",
   });
