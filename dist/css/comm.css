@@ -270,4 +270,75 @@ body {
   color: #000;
   margin-top: 80px;
   font-family: "pretendard";
+}
+#onepage_wrap .work #art {
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+#onepage_wrap .work .art-wrapper {
+  padding: 20px 0;
+  margin: 200px 0;
+}
+#onepage_wrap .work .art-wrapper2 {
+  padding: 20px 0;
+  margin: 200px 0;
+}
+#onepage_wrap .work .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#onepage_wrap .work .collumn {
+  display: inline-block;
+  height: 100%;
+  display: flex;
+}
+#onepage_wrap .work .collumn:first-child {
+  width: 20%;
+}
+#onepage_wrap .work .collumn:last-child {
+  width: 20%;
+}
+#onepage_wrap .work .collumn:nth-child(2) {
+  width: 40%;
+}
+#onepage_wrap .work .collumn:nth-child(2) img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#onepage_wrap .work .collumn img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+#onepage_wrap .work .titel {
+  position: absolute;
+  color: #fff;
+  font-size: 50px;
+  font-family: "pretendard";
+  font-weight: 600;
+}
+#onepage_wrap .work .titel span {
+  display: block;
+  font-size: 18px;
+  font-family: "pretendard";
+  text-align: center;
+  margin-top: 30px;
+}
+#onepage_wrap .work .titel span .fa-chevron-right {
+  font-size: 12px;
+}
+#onepage_wrap .work .scroll {
+  display: block;
+  font-size: 18px;
+  font-family: "pretendard";
+  text-align: center;
+  margin-top: 30px;
 }/*# sourceMappingURL=comm.css.map */

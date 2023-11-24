@@ -348,5 +348,74 @@ body {
       margin-top: 80px;
       font-family: "pretendard";
     }
+    #art {
+      height: 100vh;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+    .art-wrapper {
+      padding: 20px 0;
+      margin: 200px 0;
+    }
+    .art-wrapper2 {
+      padding: 20px 0;
+      margin: 200px 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .collumn {
+      display: inline-block;
+      height: 100%;
+      display: flex;
+      &:first-child {
+        width: 20%;
+      }
+      &:last-child {
+        width: 20%;
+      }
+      &:nth-child(2) {
+        width: 40%;
+        img {
+          object-fit: cover;
+        }
+      }
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .titel {
+      position: absolute;
+      color: #fff;
+      font-size: 50px;
+      font-family: "pretendard";
+      font-weight: 600;
+      span {
+        display: block;
+        font-size: 18px;
+        font-family: "pretendard";
+        text-align: center;
+        margin-top: 30px;
+        .fa-chevron-right {
+          font-size: 12px;
+        }
+      }
+    }
+    .scroll {
+      display: block;
+      font-size: 18px;
+      font-family: "pretendard";
+      text-align: center;
+      margin-top: 30px;
+    }
   }
 }
