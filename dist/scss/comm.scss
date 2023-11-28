@@ -1,5 +1,31 @@
 $color_1: #000;
 $font-family_1: "Lato";
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin transition {
+  -moz-transition: 0.3s ease-in-out all;
+  -o-transition: 0.3s ease-in-out all;
+  -webkit-transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
+}
+
+@mixin filter($filter) {
+  -webkit-filter: $filter;
+  -moz-filter: $filter;
+  -o-filter: $filter;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,900);
+
+$sm: 480px;
+$md: 768px;
+$lg: 992px;
 
 body {
   margin: 0;
