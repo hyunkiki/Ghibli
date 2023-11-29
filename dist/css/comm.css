@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,900);
 body {
   margin: 0;
 }
@@ -226,7 +225,7 @@ body {
   position: relative;
   padding: 10vw 0;
   overflow: hidden;
-  height: 100vh;
+  height: 50vh;
 }
 #onepage_wrap .text-container {
   position: absolute;
