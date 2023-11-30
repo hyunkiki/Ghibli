@@ -343,7 +343,7 @@ body {
     }
     .art-wrapper {
       padding: 20px 0;
-      margin: 200px 0;
+      margin: 100px 0;
     }
     .art-wrapper2 {
       padding: 20px 0;
@@ -453,7 +453,14 @@ body {
     }
   }
   .event {
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #fff;
+    color: #000;
     .intro_tit {
       margin: 0;
       font-size: 80px;
@@ -462,5 +469,91 @@ body {
       margin-top: 80px;
       font-family: "pretendard";
     }
+    .intro_exp {
+      font-family: "pretendard";
+      font-size: 30px;
+    }
+  }
+  #horizontal-scoll {
+    /* horizontal scroll */
+    // h1 {
+    //   font-size: 4rem;
+    // }
+    padding: 200px 0;
+    a {
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      display: block;
+      margin: 20px 0 0 0;
+      transition: all 0.3s ease-in-out;
+      font-size: 1.2rem;
+      color: #f6f2e8;
+      text-decoration: none;
+      &:hover {
+        color: #6e4ce1;
+      }
+    }
+    // #horizontal-scoll {
+    //   padding: 200px 0;
+    // }
+    .horizontal-scoll-wrapper {
+      overflow: hidden;
+      height: 525px;
+    }
+    .horizontal {
+      display: flex;
+      height: 100%;
+      > div {
+        display: flex;
+        flex-shrink: 0;
+        padding: 0 5px;
+        flex-direction: column;
+        &:first-child {
+          padding: 0 5px 0 15px;
+        }
+        &:last-child {
+          padding: 0 15px 0 5px;
+        }
+      }
+      // .card {
+      //   align-items: stretch;
+      //   width: 540px;
+      //   padding: 50px 40px;
+      //   background: #6e4ce1;
+      //   border-radius: 30px;
+      //   color: #f6f2e8;
+      //   height: 80%;
+      // }
+      .card_tit {
+        font-family: "pretendard";
+        font-size: 20px;
+      }
+      .exp_box {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        .card_exp {
+          font-family: "pretendard";
+          font-size: 18px;
+        }
+        .btn_menu {
+          height: 45px;
+          background: #fff;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #fff;
   }
 }

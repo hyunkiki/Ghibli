@@ -280,7 +280,7 @@ body {
 }
 #onepage_wrap .work .art-wrapper {
   padding: 20px 0;
-  margin: 200px 0;
+  margin: 100px 0;
 }
 #onepage_wrap .work .art-wrapper2 {
   padding: 20px 0;
@@ -386,7 +386,14 @@ body {
   }
 }
 #onepage_wrap .event {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #fff;
+  color: #000;
 }
 #onepage_wrap .event .intro_tit {
   margin: 0;
@@ -395,4 +402,75 @@ body {
   color: #000;
   margin-top: 80px;
   font-family: "pretendard";
+}
+#onepage_wrap .event .intro_exp {
+  font-family: "pretendard";
+  font-size: 30px;
+}
+#onepage_wrap #horizontal-scoll {
+  /* horizontal scroll */
+  padding: 200px 0;
+}
+#onepage_wrap #horizontal-scoll a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  display: block;
+  margin: 20px 0 0 0;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+  color: #f6f2e8;
+  text-decoration: none;
+}
+#onepage_wrap #horizontal-scoll a:hover {
+  color: #6e4ce1;
+}
+#onepage_wrap #horizontal-scoll .horizontal-scoll-wrapper {
+  overflow: hidden;
+  height: 525px;
+}
+#onepage_wrap #horizontal-scoll .horizontal {
+  display: flex;
+  height: 100%;
+}
+#onepage_wrap #horizontal-scoll .horizontal > div {
+  display: flex;
+  flex-shrink: 0;
+  padding: 0 5px;
+  flex-direction: column;
+}
+#onepage_wrap #horizontal-scoll .horizontal > div:first-child {
+  padding: 0 5px 0 15px;
+}
+#onepage_wrap #horizontal-scoll .horizontal > div:last-child {
+  padding: 0 15px 0 5px;
+}
+#onepage_wrap #horizontal-scoll .horizontal .card_tit {
+  font-family: "pretendard";
+  font-size: 20px;
+}
+#onepage_wrap #horizontal-scoll .horizontal .exp_box {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+#onepage_wrap #horizontal-scoll .horizontal .exp_box .card_exp {
+  font-family: "pretendard";
+  font-size: 18px;
+}
+#onepage_wrap #horizontal-scoll .horizontal .exp_box .btn_menu {
+  height: 45px;
+  background: #fff;
+  border-radius: 10px;
+}
+#onepage_wrap footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #fff;
 }/*# sourceMappingURL=comm.css.map */
