@@ -551,9 +551,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-evenly;
     background: #fff;
+    .ft_tit {
+      margin: 0;
+      font-size: 80px;
+      text-align: center;
+      color: #000;
+      margin-top: 80px;
+      font-family: "pretendard";
+    }
+    .map_box {
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+    }
   }
 }
