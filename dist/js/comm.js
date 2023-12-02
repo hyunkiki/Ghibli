@@ -95,7 +95,7 @@ gsap.to(".left-img", {
   yPercent: -30,
   ease: "none",
   scrollTrigger: {
-    trigger: ".art-wrapper .art-wrapper2",
+    trigger: ".art-wrapper .art-wrapper2 .art-wrapper3",
     scrub: 1,
   },
 });
@@ -103,7 +103,7 @@ gsap.to(".right-img", {
   yPercent: -10,
   ease: "none",
   scrollTrigger: {
-    trigger: ".art-wrapper .art-wrapper2",
+    trigger: ".art-wrapper .art-wrapper2 .art-wrapper3",
     scrub: 1,
   },
 });
@@ -111,7 +111,7 @@ gsap.to(".titel", {
   yPercent: -0,
   ease: "none",
   scrollTrigger: {
-    trigger: ".art-wrapper .art-wrapper2",
+    trigger: ".art-wrapper .art-wrapper2 .art-wrapper3",
     scrub: 1,
     end: "100px;",
   },

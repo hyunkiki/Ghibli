@@ -286,6 +286,10 @@ body {
   padding: 20px 0;
   margin: 200px 0;
 }
+#onepage_wrap .work .art-wrapper3 {
+  padding: 20px 0;
+  margin: 200px 0;
+}
 #onepage_wrap .work .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -464,6 +468,7 @@ body {
   height: 45px;
   background: #fff;
   border-radius: 10px;
+  font-size: 16px;
 }
 #onepage_wrap footer {
   display: flex;
@@ -486,4 +491,46 @@ body {
   display: flex;
   width: 70%;
   justify-content: space-between;
+}
+#onepage_wrap footer .map_box .add_info_box .categ_menu {
+  display: flex;
+  flex-direction: column;
+}
+#onepage_wrap footer .map_box .add_info_box .categ_menu .categ_menu_tit {
+  font-size: 25px;
+  font-family: "pretendard";
+  width: 100%;
+}
+#onepage_wrap footer .map_box .add_info_box .categ_menu .categ_lst {
+  font-size: 20px;
+  font-family: "pretendard";
+  -webkit-text-decoration: auto;
+          text-decoration: auto;
+  color: #000;
+  line-height: 30px;
+}
+#onepage_wrap footer .map_box .add_info_box .site {
+  display: flex;
+  flex-direction: column;
+}
+#onepage_wrap footer .map_box .add_info_box .site .relate_site_tit {
+  font-size: 25px;
+  font-family: "pretendard";
+  width: 100%;
+}
+#onepage_wrap footer .map_box .add_info_box .site .site_lst {
+  font-size: 20px;
+  font-family: "pretendard";
+  -webkit-text-decoration: auto;
+          text-decoration: auto;
+  color: #000;
+  line-height: 30px;
+}
+#onepage_wrap footer .map_box .add_info_box .copyright {
+  font-size: 20px;
+  font-family: "pretendard";
+}
+#onepage_wrap footer .map_box #map .locate_tit {
+  font-size: 25px;
+  font-family: "pretendard";
 }/*# sourceMappingURL=comm.css.map */
