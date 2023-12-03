@@ -1,6 +1,36 @@
 body {
   margin: 0;
 }
+#header {
+  background: #000;
+  .hd_inner {
+    padding: 0 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .gnb {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    padding: 0;
+    li {
+      width: 100%;
+      list-style-type: none;
+      text-align: center;
+      a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "pretendard";
+        font-weight: 600;
+        &:hover {
+          color: rgb(16, 154, 234);
+        }
+      }
+    }
+  }
+}
 .inner {
   display: block;
   margin: 0 auto;
@@ -97,7 +127,7 @@ body {
       -webkit-transition: all 0.5s ease-in 3s;
       transition: all 0.5s ease-in 3s;
       position: absolute;
-      bottom: 30px;
+      bottom: -6%;
       left: 50%;
       margin-left: -16px;
       display: block;
