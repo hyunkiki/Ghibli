@@ -157,3 +157,13 @@ gsap.to(".horizontal", {
     invalidateOnRefresh: true,
   },
 });
+
+new fullpage("#onepage_wrap", {
+  //options here
+  autoScrolling: true,
+  scrollHorizontally: true,
+  navigationTooltips: ["a", "b", "c", "d"],
+  anchors: ["INTRO", "ABOUT", "WORK", "EVENT"],
+  menu: ["#gnb"],
+  navigationPosition: "le",
+});
