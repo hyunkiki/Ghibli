@@ -41,24 +41,24 @@ body {
   max-width: 1280px;
 }
 
-#onepage_wrap .home {
+#onepage_wrap #home {
   background: rgb(16, 154, 234);
   width: 100%;
   height: 105vh;
 }
-#onepage_wrap .home .home_box {
+#onepage_wrap #home .home_box {
   display: flex;
   align-items: flex-end;
   position: relative;
 }
-#onepage_wrap .home .home_box .thumb_img {
+#onepage_wrap #home .home_box .thumb_img {
   width: 60%;
   padding-top: 50px;
 }
-#onepage_wrap .home .home_box .thumb_img img {
+#onepage_wrap #home .home_box .thumb_img img {
   width: 100%;
 }
-#onepage_wrap .home .home_box .letter_wrap {
+#onepage_wrap #home .home_box .letter_wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,23 +67,23 @@ body {
   right: 5%;
   bottom: 0%;
 }
-#onepage_wrap .home .home_box .letterwrapper1 {
+#onepage_wrap #home .home_box .letterwrapper1 {
   display: flex;
   border-bottom: 1px solid;
   color: #fff;
   font-size: 50px;
   font-family: "pretendard";
 }
-#onepage_wrap .home .home_box .letterwrapper1 .letter {
+#onepage_wrap #home .home_box .letterwrapper1 .letter {
   margin: 0;
 }
-#onepage_wrap .home .home_box .letterwrapper2 {
+#onepage_wrap #home .home_box .letterwrapper2 {
   display: flex;
   color: #fff;
   font-size: 40px;
   font-family: "pretendard";
 }
-#onepage_wrap .home .home_box .letterwrapper2 .letter {
+#onepage_wrap #home .home_box .letterwrapper2 .letter {
   margin: 0;
 }
 @keyframes bounce {
@@ -97,12 +97,12 @@ body {
     transform: translateY(-5px);
   }
 }
-#onepage_wrap .home section {
+#onepage_wrap #home section {
   height: 100vh;
   width: 100%;
   display: table;
 }
-#onepage_wrap .home .scroll-down {
+#onepage_wrap #home .scroll-down {
   opacity: 1;
   transition: all 0.5s ease-in 3s;
   position: absolute;
@@ -120,7 +120,7 @@ body {
   transition: all 0.2s ease-in;
   transform: scale(1);
 }
-#onepage_wrap .home .scroll-down:before {
+#onepage_wrap #home .scroll-down:before {
   position: absolute;
   top: calc(50% - 8px);
   left: calc(50% - 6px);
@@ -132,11 +132,11 @@ body {
   border: 2px solid white;
   border-width: 0px 0 2px 2px;
 }
-#onepage_wrap .about {
+#onepage_wrap #about {
   background: #fff;
   /* parallax__cont */
 }
-#onepage_wrap .about .intro_tit {
+#onepage_wrap #about .intro_tit {
   margin: 0;
   font-size: 80px;
   text-align: center;
@@ -144,13 +144,13 @@ body {
   margin-top: 80px;
   font-family: "pretendard";
 }
-#onepage_wrap .about #parallax__title {
+#onepage_wrap #about #parallax__title {
   position: fixed;
   left: 20px;
   top: 20px;
   z-index: 1000;
 }
-#onepage_wrap .about #parallax__title h1 {
+#onepage_wrap #about #parallax__title h1 {
   font-size: 30px;
   border-bottom: 1px dashed #fff;
   margin-bottom: 10px;
@@ -158,16 +158,16 @@ body {
   font-weight: 400;
   display: inline-block;
 }
-#onepage_wrap .about #parallax__title p {
+#onepage_wrap #about #parallax__title p {
   font-size: 16px;
 }
-#onepage_wrap .about #parallax__title ul {
+#onepage_wrap #about #parallax__title ul {
   margin-top: 10px;
 }
-#onepage_wrap .about #parallax__title li {
+#onepage_wrap #about #parallax__title li {
   display: inline;
 }
-#onepage_wrap .about #parallax__title li a {
+#onepage_wrap #about #parallax__title li a {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -177,16 +177,16 @@ body {
   line-height: 20px;
   font-size: 12px;
 }
-#onepage_wrap .about #parallax__title li.active a {
+#onepage_wrap #about #parallax__title li.active a {
   background: #fff;
   color: #000;
 }
-#onepage_wrap .about #parallax__cont {
+#onepage_wrap #about #parallax__cont {
   max-width: 1600px;
   width: 98%;
   margin: 0 auto;
 }
-#onepage_wrap .about .parallax__item {
+#onepage_wrap #about .parallax__item {
   width: 100%;
   /* max-width: 70vw; */
   margin-top: 15vw;
@@ -195,11 +195,11 @@ body {
   position: relative;
   padding-top: 15vw;
 }
-#onepage_wrap .about .parallax__item:nth-child(even) {
+#onepage_wrap #about .parallax__item:nth-child(even) {
   margin-left: 0;
   text-align: left;
 }
-#onepage_wrap .about .parallax__item__num {
+#onepage_wrap #about .parallax__item__num {
   font-size: 15vw;
   position: absolute;
   left: 3%;
@@ -208,27 +208,27 @@ body {
   font-family: "Lato";
   font-weight: 100;
 }
-#onepage_wrap .about .prarallax_box {
+#onepage_wrap #about .prarallax_box {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-#onepage_wrap .about .item_box {
+#onepage_wrap #about .item_box {
   display: block;
   width: 50%;
 }
-#onepage_wrap .about .parallax__item__title {
+#onepage_wrap #about .parallax__item__title {
   font-weight: 600;
   font-size: 60px;
   font-family: "pretendard";
 }
-#onepage_wrap .about .parallax__item__imgWrap {
+#onepage_wrap #about .parallax__item__imgWrap {
   width: 40%;
   padding-bottom: 56.25%;
   position: relative;
 }
-#onepage_wrap .about .parallax__item__img {
+#onepage_wrap #about .parallax__item__img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -236,19 +236,19 @@ body {
   background-position: center center;
   background-size: cover;
 }
-#onepage_wrap .about #section1 .parallax__item__img {
+#onepage_wrap #about #section1 .parallax__item__img {
   background-image: url(../../img/Ghibli_illust.jpg);
 }
-#onepage_wrap .about #section2 .parallax__item__img {
+#onepage_wrap #about #section2 .parallax__item__img {
   background-image: url(../../img/hayao&toshio&Isao.jpg);
 }
-#onepage_wrap .about #section3 .parallax__item__img {
+#onepage_wrap #about #section3 .parallax__item__img {
   background-image: url(../../img/company.jpg);
 }
-#onepage_wrap .about #section4 .parallax__item__img {
+#onepage_wrap #about #section4 .parallax__item__img {
   background-image: url(../../img/HisaSaijō.jpg);
 }
-#onepage_wrap .about .parallax__item__desc {
+#onepage_wrap #about .parallax__item__desc {
   font-size: 25px;
   font-family: "pretendard";
 }
@@ -290,10 +290,10 @@ body {
 #onepage_wrap .parallax-text:last-child {
   align-self: flex-end;
 }
-#onepage_wrap .work {
+#onepage_wrap #work {
   position: relative;
 }
-#onepage_wrap .work .intro_tit {
+#onepage_wrap #work .intro_tit {
   margin: 0;
   font-size: 80px;
   text-align: center;
@@ -301,7 +301,7 @@ body {
   margin-top: 80px;
   font-family: "pretendard";
 }
-#onepage_wrap .work #art {
+#onepage_wrap #work #art {
   height: 100vh;
   max-width: 100%;
   display: flex;
@@ -309,50 +309,50 @@ body {
   align-items: center;
   z-index: 2;
 }
-#onepage_wrap .work .art-wrapper {
+#onepage_wrap #work .art-wrapper {
   padding: 20px 0;
   margin: 100px 0;
 }
-#onepage_wrap .work .art-wrapper2 {
+#onepage_wrap #work .art-wrapper2 {
   padding: 20px 0;
   margin: 200px 0;
 }
-#onepage_wrap .work .art-wrapper3 {
+#onepage_wrap #work .art-wrapper3 {
   padding: 20px 0;
   margin: 200px 0;
 }
-#onepage_wrap .work .container {
+#onepage_wrap #work .container {
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
-#onepage_wrap .work .collumn {
+#onepage_wrap #work .collumn {
   display: inline-block;
   height: 100%;
   display: flex;
 }
-#onepage_wrap .work .collumn:first-child {
+#onepage_wrap #work .collumn:first-child {
   width: 20%;
 }
-#onepage_wrap .work .collumn:last-child {
+#onepage_wrap #work .collumn:last-child {
   width: 20%;
 }
-#onepage_wrap .work .collumn:nth-child(2) {
+#onepage_wrap #work .collumn:nth-child(2) {
   width: 40%;
 }
-#onepage_wrap .work .collumn:nth-child(2) img {
+#onepage_wrap #work .collumn:nth-child(2) img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#onepage_wrap .work .collumn img {
+#onepage_wrap #work .collumn img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
   height: auto;
 }
-#onepage_wrap .work .titel {
+#onepage_wrap #work .titel {
   position: absolute;
   color: #fff;
   font-size: 50px;
@@ -360,17 +360,17 @@ body {
   font-weight: 600;
   text-align: center;
 }
-#onepage_wrap .work .titel span {
+#onepage_wrap #work .titel span {
   display: block;
   font-size: 18px;
   font-family: "pretendard";
   text-align: center;
   margin-top: 30px;
 }
-#onepage_wrap .work .titel span .fa-chevron-right {
+#onepage_wrap #work .titel span .fa-chevron-right {
   font-size: 12px;
 }
-#onepage_wrap .work .scroll {
+#onepage_wrap #work .scroll {
   display: block;
   font-size: 18px;
   font-family: "pretendard";
@@ -420,7 +420,7 @@ body {
     transform: translateY(calc(100% - 8rem));
   }
 }
-#onepage_wrap .event {
+#onepage_wrap #event {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -430,7 +430,7 @@ body {
   background: #fff;
   color: #000;
 }
-#onepage_wrap .event .intro_tit {
+#onepage_wrap #event .intro_tit {
   margin: 0;
   font-size: 80px;
   text-align: center;
@@ -438,7 +438,7 @@ body {
   margin-top: 80px;
   font-family: "pretendard";
 }
-#onepage_wrap .event .intro_exp {
+#onepage_wrap #event .intro_exp {
   font-family: "pretendard";
   font-size: 30px;
 }

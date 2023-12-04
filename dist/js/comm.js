@@ -158,12 +158,8 @@ gsap.to(".horizontal", {
   },
 });
 
-new fullpage("#onepage_wrap", {
-  //options here
-  autoScrolling: true,
-  scrollHorizontally: true,
-  navigationTooltips: ["a", "b", "c", "d"],
-  anchors: ["INTRO", "ABOUT", "WORK", "EVENT"],
-  menu: ["#gnb"],
-  navigationPosition: "le",
+$(function () {
+  $("li > a").click(function () {
+    $("html, body").animate({ scrollTop: $(this.hash).offset.top }, 300);
+  });
 });

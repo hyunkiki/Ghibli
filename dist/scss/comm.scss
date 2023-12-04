@@ -39,7 +39,7 @@ body {
   max-width: 1280px;
 }
 #onepage_wrap {
-  .home {
+  #home {
     background: rgb(16, 154, 234);
     width: 100%;
     height: 105vh;
@@ -157,7 +157,7 @@ body {
       }
     }
   }
-  .about {
+  #about {
     background: #fff;
     // width: 100%;
     // height: 300vh;
@@ -353,7 +353,7 @@ body {
       align-self: flex-end;
     }
   }
-  .work {
+  #work {
     // height: 100vh;
     position: relative;
     .intro_tit {
@@ -487,7 +487,7 @@ body {
       }
     }
   }
-  .event {
+  #event {
     display: flex;
     justify-content: center;
     align-items: center;
