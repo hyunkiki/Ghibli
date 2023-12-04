@@ -64,14 +64,14 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 5%;
+  right: 10%;
   bottom: 0%;
 }
 #onepage_wrap #home .home_box .letterwrapper1 {
   display: flex;
   border-bottom: 1px solid;
   color: #fff;
-  font-size: 50px;
+  font-size: 60px;
   font-family: "pretendard";
 }
 #onepage_wrap #home .home_box .letterwrapper1 .letter {
@@ -80,7 +80,7 @@ body {
 #onepage_wrap #home .home_box .letterwrapper2 {
   display: flex;
   color: #fff;
-  font-size: 40px;
+  font-size: 55px;
   font-family: "pretendard";
 }
 #onepage_wrap #home .home_box .letterwrapper2 .letter {
