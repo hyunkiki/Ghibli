@@ -590,12 +590,12 @@ body {
     height: 100vh;
     flex-direction: column;
     justify-content: space-evenly;
-    background: #fff;
+    background: #000;
     .ft_tit {
       margin: 0;
       font-size: 80px;
       text-align: center;
-      color: #000;
+      color: #fff;
       margin-top: 80px;
       font-family: "pretendard";
     }
@@ -611,12 +611,13 @@ body {
             font-size: 25px;
             font-family: "pretendard";
             width: 100%;
+            color: #fff;
           }
           .categ_lst {
             font-size: 20px;
             font-family: "pretendard";
             text-decoration: auto;
-            color: #000;
+            color: #fff;
             line-height: 30px;
           }
         }
@@ -627,24 +628,27 @@ body {
             font-size: 25px;
             font-family: "pretendard";
             width: 100%;
+            color: #fff;
           }
           .site_lst {
             font-size: 20px;
             font-family: "pretendard";
             text-decoration: auto;
-            color: #000;
+            color: #fff;
             line-height: 30px;
           }
         }
         .copyright {
           font-size: 20px;
           font-family: "pretendard";
+          color: #fff;
         }
       }
       #map {
         .locate_tit {
           font-size: 25px;
           font-family: "pretendard";
+          color: #fff;
         }
       }
     }

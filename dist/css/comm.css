@@ -508,13 +508,13 @@ body {
   height: 100vh;
   flex-direction: column;
   justify-content: space-evenly;
-  background: #fff;
+  background: #000;
 }
 #onepage_wrap footer .ft_tit {
   margin: 0;
   font-size: 80px;
   text-align: center;
-  color: #000;
+  color: #fff;
   margin-top: 80px;
   font-family: "pretendard";
 }
@@ -531,13 +531,14 @@ body {
   font-size: 25px;
   font-family: "pretendard";
   width: 100%;
+  color: #fff;
 }
 #onepage_wrap footer .map_box .add_info_box .categ_menu .categ_lst {
   font-size: 20px;
   font-family: "pretendard";
   -webkit-text-decoration: auto;
           text-decoration: auto;
-  color: #000;
+  color: #fff;
   line-height: 30px;
 }
 #onepage_wrap footer .map_box .add_info_box .site {
@@ -548,20 +549,23 @@ body {
   font-size: 25px;
   font-family: "pretendard";
   width: 100%;
+  color: #fff;
 }
 #onepage_wrap footer .map_box .add_info_box .site .site_lst {
   font-size: 20px;
   font-family: "pretendard";
   -webkit-text-decoration: auto;
           text-decoration: auto;
-  color: #000;
+  color: #fff;
   line-height: 30px;
 }
 #onepage_wrap footer .map_box .add_info_box .copyright {
   font-size: 20px;
   font-family: "pretendard";
+  color: #fff;
 }
 #onepage_wrap footer .map_box #map .locate_tit {
   font-size: 25px;
   font-family: "pretendard";
+  color: #fff;
 }/*# sourceMappingURL=comm.css.map */
