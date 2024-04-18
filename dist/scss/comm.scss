@@ -234,7 +234,7 @@ body {
       top: -1vw;
       opacity: 0.07;
       font-family: "Lato";
-      font-weight: 100;
+      font-weight: bold;
     }
     .prarallax_box {
       display: flex;
@@ -356,7 +356,12 @@ body {
       margin-top: 80px;
       font-family: "pretendard";
     }
-    #art {
+    #art1,
+    #art2,
+    #art3,
+    #art4,
+    #art5,
+    #art6 {
       height: 100vh;
       max-width: 100%;
       display: flex;
