@@ -543,8 +543,13 @@ body {
   font-family: "pretendard";
   -webkit-text-decoration: auto;
           text-decoration: auto;
-  color: #fff;
+  color: gray;
+  opacity: 0.5;
   line-height: 30px;
+}
+#onepage_wrap footer .map_box .add_info_box .categ_menu .categ_lst:hover {
+  opacity: 1;
+  color: #fff;
 }
 #onepage_wrap footer .map_box .add_info_box .site {
   display: flex;
@@ -561,8 +566,13 @@ body {
   font-family: "pretendard";
   -webkit-text-decoration: auto;
           text-decoration: auto;
-  color: #fff;
+  color: gray;
+  opacity: 0.5;
   line-height: 30px;
+}
+#onepage_wrap footer .map_box .add_info_box .site .site_lst:hover {
+  opacity: 1;
+  color: #fff;
 }
 #onepage_wrap footer .map_box .add_info_box .copyright {
   font-size: 20px;

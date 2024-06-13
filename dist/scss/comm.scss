@@ -614,8 +614,13 @@ body {
             font-size: 20px;
             font-family: "pretendard";
             text-decoration: auto;
-            color: #fff;
+            color: gray;
+            opacity: 0.5;
             line-height: 30px;
+            &:hover {
+              opacity: 1;
+              color: #fff;
+            }
           }
         }
         .site {
@@ -631,8 +636,13 @@ body {
             font-size: 20px;
             font-family: "pretendard";
             text-decoration: auto;
-            color: #fff;
+            color: gray;
+            opacity: 0.5;
             line-height: 30px;
+            &:hover {
+              opacity: 1;
+              color: #fff;
+            }
           }
         }
         .copyright {
