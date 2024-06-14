@@ -109,7 +109,7 @@ gsap.to(".right-img", {
     scrub: 1,
   },
 });
-// gsap.to(".titel", {
+// gsap.to(".bg_black", {
 //   yPercent: -0,
 //   ease: "none",
 //   duration: 3,
