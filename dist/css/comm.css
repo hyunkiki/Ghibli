@@ -17,6 +17,7 @@ body {
   width: 30%;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 #header .gnb li {
   width: 100%;
@@ -29,9 +30,13 @@ body {
   color: #fff;
   font-family: "pretendard";
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 0 40px;
 }
 #header .gnb li a:hover {
-  color: rgb(16, 154, 234);
+  color: #109aea;
 }
 
 .inner {
@@ -136,13 +141,27 @@ body {
   background: #fff;
   /* parallax__cont */
 }
-#onepage_wrap #about .intro_tit {
+#onepage_wrap #about .about_intro_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #fff;
+  color: #000;
+}
+#onepage_wrap #about .about_intro_box .intro_tit {
   margin: 0;
   font-size: 80px;
   text-align: center;
   color: #000;
   margin-top: 80px;
   font-family: "pretendard";
+}
+#onepage_wrap #about .about_intro_box .intro_exp {
+  font-family: "pretendard";
+  font-size: 30px;
 }
 #onepage_wrap #about #parallax__title {
   position: fixed;
@@ -204,9 +223,10 @@ body {
   position: absolute;
   left: 3%;
   top: -1vw;
-  opacity: 0.07;
+  opacity: 0.5;
   font-family: "Lato";
   font-weight: bold;
+  color: #109aea;
 }
 #onepage_wrap #about .prarallax_box {
   display: flex;
@@ -286,6 +306,7 @@ body {
   white-space: nowrap;
   color: rgb(16, 154, 234);
   margin: 0;
+  font-weight: 900;
 }
 #onepage_wrap .parallax-text:last-child {
   align-self: flex-end;
@@ -293,13 +314,27 @@ body {
 #onepage_wrap #work {
   position: relative;
 }
-#onepage_wrap #work .intro_tit {
+#onepage_wrap #work .work_intro_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #fff;
+  color: #000;
+}
+#onepage_wrap #work .work_intro_box .intro_tit {
   margin: 0;
   font-size: 80px;
   text-align: center;
   color: #000;
   margin-top: 80px;
   font-family: "pretendard";
+}
+#onepage_wrap #work .work_intro_box .intro_exp {
+  font-family: "pretendard";
+  font-size: 30px;
 }
 #onepage_wrap #work #art1,
 #onepage_wrap #work #art2,
@@ -316,19 +351,18 @@ body {
 }
 #onepage_wrap #work .art-wrapper {
   padding: 20px 0;
-  margin: 100px 0;
+  margin-top: 200px;
 }
 #onepage_wrap #work .art-wrapper2 {
   padding: 20px 0;
-  margin: 200px 0;
+  margin-top: 200px;
 }
 #onepage_wrap #work .art-wrapper3 {
   padding: 20px 0;
   margin: 200px 0;
 }
 #onepage_wrap #work .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -345,7 +379,7 @@ body {
   width: 20%;
 }
 #onepage_wrap #work .collumn:nth-child(2) {
-  width: 40%;
+  width: 45%;
 }
 #onepage_wrap #work .collumn:nth-child(2) img {
   -o-object-fit: cover;
@@ -357,23 +391,82 @@ body {
   width: 100%;
   height: auto;
 }
-#onepage_wrap #work .titel {
+#onepage_wrap #work .collumn .bg_black {
   position: absolute;
+  top: 9.1%;
+  bottom: 0%;
+  left: 34.8%;
+  right: 0;
+  height: 12.5%;
+  width: 30.4%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000;
+}
+#onepage_wrap #work .collumn .bg_black:hover {
+  opacity: 0.7;
+}
+#onepage_wrap #work .collumn .bg_black .work_info_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#onepage_wrap #work .collumn .bg_black .work_info_box .work_title {
   color: #fff;
   font-size: 50px;
-  font-family: "pretendard";
-  font-weight: 600;
-  text-align: center;
+  font-weight: 700;
+  margin: 0;
 }
-#onepage_wrap #work .titel span {
+#onepage_wrap #work .collumn .bg_black .work_info_box .work_year {
+  color: #fff;
+  font-size: 40px;
+  padding-top: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+#onepage_wrap #work .collumn .bg_black .work_info_box .work_exp {
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 60px;
+  font-weight: 400;
+  margin: 0;
+}
+#onepage_wrap #work .collumn .bg_black .work_info_box .btn {
   display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 36px;
   font-size: 18px;
-  font-family: "pretendard";
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  letter-spacing: 2px;
   text-align: center;
-  margin-top: 30px;
+  transition: all 0.35s;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
-#onepage_wrap #work .titel span .fa-chevron-right {
-  font-size: 12px;
+#onepage_wrap #work .collumn .bg_black .work_info_box .btn span {
+  position: relative;
+  z-index: 2;
+}
+#onepage_wrap #work .collumn .bg_black .work_info_box .btn:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #109aea;
+  transition: all 0.35s;
+}
+#onepage_wrap #work .collumn .bg_black .work_info_box .btn:hover:after {
+  width: 100%;
 }
 #onepage_wrap #work .scroll {
   display: block;
@@ -394,7 +487,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: 70px;
   padding: 57px 0;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -408,7 +501,7 @@ body {
   white-space: nowrap;
   will-change: transform;
   animation: marquee 60s linear infinite;
-  font-size: 6vw;
+  font-size: 10vw;
   color: rgb(16, 154, 234);
   font-family: "pretendard";
 }
@@ -492,7 +585,7 @@ body {
 }
 #onepage_wrap #horizontal-scoll .horizontal .exp_box {
   display: flex;
-  width: 50%;
+  width: 60%;
   justify-content: space-between;
   align-items: center;
 }
@@ -505,6 +598,11 @@ body {
   background: #fff;
   border-radius: 10px;
   font-size: 16px;
+  opacity: 0.3;
+}
+#onepage_wrap #horizontal-scoll .horizontal .exp_box .btn_menu:hover {
+  opacity: 1;
+  border: 2px solid #000;
 }
 #onepage_wrap footer {
   display: flex;

@@ -92,30 +92,33 @@ textContainers.forEach((element, index) => {
 });
 
 gsap.to(".left-img", {
-  yPercent: -30,
+  yPercent: -40,
   ease: "none",
+  duration: 3,
   scrollTrigger: {
     trigger: ".art-wrapper .art-wrapper2 .art-wrapper3",
     scrub: 1,
   },
 });
 gsap.to(".right-img", {
-  yPercent: -10,
+  yPercent: -30,
   ease: "none",
+  duration: 3,
   scrollTrigger: {
     trigger: ".art-wrapper .art-wrapper2 .art-wrapper3",
     scrub: 1,
   },
 });
-gsap.to(".titel", {
-  yPercent: -0,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".art-wrapper .art-wrapper2 .art-wrapper3",
-    scrub: 1,
-    end: "100px;",
-  },
-});
+// gsap.to(".titel", {
+//   yPercent: -0,
+//   ease: "none",
+//   duration: 3,
+//   scrollTrigger: {
+//     trigger: ".art-wrapper .art-wrapper2 .art-wrapper3",
+//     scrub: 1,
+//     end: "100px;",
+//   },
+// });
 gsap.to(".left-scroll", {
   xPercent: -100,
   ease: "none",
